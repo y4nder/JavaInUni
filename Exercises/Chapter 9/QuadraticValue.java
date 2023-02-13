@@ -9,7 +9,7 @@ public class QuadraticValue{
 }
 
 //at x = 4.0E200 the value was "infinity"
-//at x = 4.0E400 -- error input was too large
+//at x = 4.0E400 -- error input was too large for double
 //At x = (2/3) 0.0 the value is 4.0
 //At x = 2.0 the value is 0.0
 //At x = 2/3. the value is 0.0
