@@ -13,3 +13,5 @@ public class QuadraticValue{
 //At x = (2/3) 0.0 the value is 4.0
 //At x = 2.0 the value is 0.0
 //At x = 2/3. the value is 0.0
+
+//double range 1.8E308
