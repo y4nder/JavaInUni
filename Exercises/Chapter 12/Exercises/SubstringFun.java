@@ -1,3 +1,4 @@
+//exercise 5
 import java.util.Scanner;
 
 public class SubstringFun {
@@ -16,7 +17,7 @@ public class SubstringFun {
       System.out.print("Enter ending index: ");
       lastIndex = sc.nextInt();
       
-      String newString = originalString.substring( firstIndex , lastIndex);
+      String newString = originalString.substring(firstIndex, lastIndex);
       
       System.out.println("\nOriginal string: \n" + originalString);
       System.out.println("\nSubstring: \n" + newString);

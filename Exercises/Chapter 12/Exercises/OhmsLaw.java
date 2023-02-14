@@ -1,3 +1,4 @@
+//exercise 4
 import java.util.Scanner;
 
 public class OhmsLaw {
