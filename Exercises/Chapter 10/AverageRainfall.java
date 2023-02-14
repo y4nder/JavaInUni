@@ -2,8 +2,8 @@
 
 public class AverageRainfall{
    public static void main (String [] args){
-      int april = 12, may = 14, june = 8;
-      double rainfall = (april + may + june)/3.0;
+      byte april = 12, may = 14, june = 8;
+      float rainfall = (april + may + june)/3.0F;
       
       System.out.println("Rainfall for April: \t" + april);
       System.out.println("Rainfall for May: \t" + may);
