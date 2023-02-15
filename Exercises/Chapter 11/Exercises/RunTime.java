@@ -4,7 +4,11 @@ public class RunTime {
       String str = new String("Hello World");
       System.out.println(str);
       
-      String secondVariable = "Goodbye World"; 
+      String secondVariable = "Goodbye World";
+      String newSub = secondVariable.substring(4);
+      int lensec = secondVariable.length(); 
       System.out.println(secondVariable);
+      System.out.println(lensec);
+      System.out.println(newSub);
    }
 }
