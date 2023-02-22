@@ -1,17 +1,15 @@
 //Exercise 2
 
 public class QuadraticValue{
-   public static void main (String [] args){
+   public static void main (String[] args){
       double x = 2/3.;
-      double value = 3 * x * x - 8 * x + 4;
+      double value = 3 * (x * x) - (8 * x) + 4;
       System.out.println("At x = " + x + " the value is " + value);
    }
 }
 
 //at x = 4.0E200 the value was "infinity"
 //at x = 4.0E400 -- error input was too large for double
-//At x = (2/3) 0.0 the value is 4.0
-//At x = 2.0 the value is 0.0
+//At x = (2/3) 0.0 the value is 4.0 -- 2/3 is integer division which evaluates to 0.0
+//At x = 2.0 the value is 0.0 
 //At x = 2/3. the value is 0.0
-
-//double range 1.8E308

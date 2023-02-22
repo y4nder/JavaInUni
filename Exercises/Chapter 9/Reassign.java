@@ -15,3 +15,5 @@ public class Reassign{
       System.out.println("At x = " + x + " the value is " + value);
    }
 }
+
+//I copied the expression for value in line 10 to line 14 to reassign the value for x.
