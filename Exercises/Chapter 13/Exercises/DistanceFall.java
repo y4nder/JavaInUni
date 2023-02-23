@@ -10,7 +10,7 @@ public class DistanceFall{
       time = scan.nextDouble();
       
       time = time * 10;                                                 
-      distance = (32.174 * ((time * time) * 0.01) / 2);
+      distance = (g * ((time * time) * 0.01) / 2);
       System.out.println("Distance: " + distance);
    }
 }
