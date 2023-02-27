@@ -4,7 +4,7 @@ public class StringLength {
       String str;
       int len;
       
-      str = new String("t\nt");
+      str = new String("t\tt");
       len = str.length();        
             
       System.out.println("The length is " + len);

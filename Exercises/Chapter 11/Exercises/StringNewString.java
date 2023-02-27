@@ -1,3 +1,4 @@
+//exercise 3
 public class StringNewString {
    public static void main ( String [] args ) {
       String first = new String ("\t\tOne     Two Three Four\t\t");
