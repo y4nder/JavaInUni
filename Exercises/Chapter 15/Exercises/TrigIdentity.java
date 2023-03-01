@@ -13,7 +13,7 @@ public class TrigIdentity{
       
       System.out.printf("sin(%2.2f)    is: %5.2f%n",angle, Math.sin(angle * Math.PI/180));
       System.out.printf("cos(%2.2f)    is: %5.2f%n",angle, Math.cos(angle * Math.PI/180));
-      System.out.printf("sin(%2.2f)^2  is: %5.2f%n",angle, Math.pow(Math.sin(angle * Math.PI/180), 2));
+      System.out.printf("sin(%2.2f)^2  is: %5.2f%n",angle, Math.pow(Math.sin(Math.toRadians(angle)), 2));   //testing a method from math class which converts degrees to radians
       System.out.printf("cos(%2.2f)^2  is: %5.2f%n",angle, Math.pow(Math.cos(angle * Math.PI/180), 2));
       System.out.printf("sum           is: %5.2f",Math.pow(Math.sin(angle * Math.PI/180), 2) + Math.pow(Math.cos(angle * Math.PI/180), 2));
    }
