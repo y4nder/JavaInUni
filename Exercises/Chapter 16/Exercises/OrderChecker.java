@@ -1,4 +1,10 @@
 //exercise 2
+/*
+if nuts >= bolts then OK
+      otherwhise few nuts
+if washer >= bolts*2 then OK
+      otherwhise few bolts
+*/
 import java.util.Scanner;
 
 public class OrderChecker{
@@ -17,7 +23,7 @@ public class OrderChecker{
       
       System.out.print("Number of washers: ");
       washer = scan.nextInt();
-      
+
       if(nut < bolt){
          if (washer < (bolt * 2)){
             System.out.println("Check the Order: too few nuts");
@@ -35,8 +41,7 @@ public class OrderChecker{
             System.out.println("Order is OK");
          }
       }
-      
-      
+   
       total = (bolt * boltPrice) + (nut * nutPrice) + (washer * washerPrice);
       
       System.out.println("Total cost: " + total);
