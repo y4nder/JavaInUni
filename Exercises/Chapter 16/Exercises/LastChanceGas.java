@@ -2,6 +2,7 @@
 import java.util.Scanner;
 public class LastChanceGas{
    public static void main(String[] args){
+      final int nextGasMile = 200; 
       int capacity, milesPerGallon, gage, gas;
       Scanner scan = new Scanner(System.in);
       
@@ -14,9 +15,9 @@ public class LastChanceGas{
       System.out.print("Miles per gallon: ");
       milesPerGallon = scan.nextInt();
       
-      gas = (((capacity * milesPerGallon) * gage) / 100);
+      gas = capacity * milesPerGallon * gage / 100;
       
-      if (gas<200)
+      if (gas<nextGasMile)
          System.out.println("Get Gas!");
       else
          System.out.println("Safe to Proceed!");
