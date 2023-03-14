@@ -7,17 +7,19 @@ otherwise - can enter
 import java.util.Scanner;
 public class PieEatingContest{
    public static void main(String[] args){
+      final int maxWeight = 250;
+      final int minWeight = 30;
       int weight;
       Scanner scan = new Scanner(System.in);
       
       System.out.print("Enter your weight: ");
       weight = scan.nextInt();
       
-      if(weight > 250){
+      if(weight > maxWeight){
          System.out.println("You cannot participate in the contest.");
       }
       else{
-         if(weight < 30){
+         if(weight < minWeight){
             System.out.println("You cannot participate in the contest.");
          }
          else{
