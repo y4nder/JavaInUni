@@ -1,6 +1,6 @@
 /*
 If wind speed is less than 3 mph then wind chill = current temperature
-If the current temperature is greater than 50Â° F then wind chill = current temperature
+If the current temperature is greater than 50° F then wind chill = current temperature
 otherwise, wind chill = 35.74 + 0.6215*temp - 35.75*v0.16 + 0.4275*temp*v0.16 */
 
 //exercise 6

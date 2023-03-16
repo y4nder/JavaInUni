@@ -2,8 +2,7 @@
 import java.util.Scanner;
 public class GroundBeef{
    public static void main(String[] args){
-      double pricePerPoundA,  pricePerPoundB,
-               costPerPoundA, costPerPoundB;
+      double pricePerPoundA,  pricePerPoundB,costPerPoundA, costPerPoundB;
       int percentLeanA, percentLeanB;
       Scanner scan = new Scanner(System.in);
       

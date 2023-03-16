@@ -1,5 +1,5 @@
-//exercise 1
 import java.util.Scanner;
+
 public class DiscountPrices{
    public static void main(String[] args){
       int purchase; 
@@ -9,8 +9,8 @@ public class DiscountPrices{
       System.out.print("Enter amount of purchases: ");
       purchase = scan.nextInt();
       
-      if(purchase > 1000)
-         price = purchase - ( (purchase * 10) / 100 );
+      if(purchase > 10)
+         price = purchase - (purchase / 10);
       else 
          price = purchase;
          

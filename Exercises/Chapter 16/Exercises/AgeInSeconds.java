@@ -11,7 +11,6 @@ convert to totalDaysays
       
       if month == 2 : days - 2 ----extra conditions to compensate with the table above.
       if month >= 8 : days + 1 -------
-
 */
 
 //exercise 7
@@ -65,6 +64,9 @@ public class AgeInSeconds{
          }  
       }
       else{    //this else statement runs if the input month is odd
+         if(months >= 2){
+            totalDays += -2;    // february has 28 days so 2 days will be deducted
+         }
          if(months >=8){
             totalDays += 1;      // 1 day is added since August has 31 days.
          }
