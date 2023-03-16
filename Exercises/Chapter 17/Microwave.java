@@ -11,23 +11,26 @@ public class Microwave{
             
       System.out.print("Time for one item: ");
       time = scan.nextInt();
+      
+      seconds = (time / 100) * 60;
+      seconds += time % 100;
 
       if(items == 1)
-         time = time;
+         seconds = seconds;
                    
       if(items == 2)
-         time += time/2;
+         seconds += seconds/2;
                   
       if(items == 3)
-         time = time*2;
+         seconds = seconds*2;
          
       if(items > 3){
-         System.out.println("Heating more than three items at once is not recommended");
-         time = 0;
+         System.out.println("Heating more than three items at once is not recommended!");
+         seconds = 0;
       }
-         
-      minutes = time / 100;
-      seconds = time % 100;
+
+      minutes = seconds / 60;
+      seconds = seconds % 60;    
       
       System.out.println("Heat for " + minutes + " minutes " + seconds + " seconds");
    }

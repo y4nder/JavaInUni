@@ -3,7 +3,7 @@ public class TownDump{
    public static void main(String[] args){
       final int addCHARGE = 8;
       int pound, add; 
-      double total=0;
+      double total = 0;
       Scanner scan = new Scanner(System.in);
       
       System.out.print("Input weight of trash in pounds: ");
@@ -11,6 +11,7 @@ public class TownDump{
       
       if(pound > 200){
          total += ( (pound - 200) / 100 ) * addCHARGE;
+         total += ( (pound - 200) % 100 ) / addCHARGE;
          pound = 200;
       }
       

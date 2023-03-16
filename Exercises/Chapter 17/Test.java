@@ -1,7 +1,8 @@
 public class Test{
    public static void main(String[] args){
-      int x = 300, y = 840;
+      int x = 160, y = 60;
       
-      System.out.println(1-x/y);
+      System.out.println(x/60);
+      System.out.println(x%60);
    }
 }
