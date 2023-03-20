@@ -15,16 +15,13 @@ public class PieEatingContest{
       System.out.print("Enter your weight: ");
       weight = scan.nextInt();
       
-      if(weight > maxWeight){
+      if(weight > maxWeight)
          System.out.println("You cannot participate in the contest.");
-      }
       else{
-         if(weight < minWeight){
+         if(weight < minWeight)
             System.out.println("You cannot participate in the contest.");
-         }
-         else{
+         else
             System.out.println("You are eligible to participate in the contest.");
-         }
       }
    }
 }

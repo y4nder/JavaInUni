@@ -11,13 +11,11 @@ public class Y2KProblemDetector{
       System.out.print("Current year: ");
       yearCurrent = scan.nextInt();
       
-      if(yearBirth < yearCurrent){
+      if(yearBirth < yearCurrent)
          age = yearCurrent - yearBirth;
-      }
-      else{
+      else
          age = (100 + yearCurrent) - yearBirth;
-      }
-      
+         
       System.out.println("Your age: " + age);
    }
 }

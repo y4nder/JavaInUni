@@ -29,17 +29,14 @@ public class OrderChecker{
             System.out.println("Check the Order: too few nuts");
             System.out.println("Check the Order: too few washers");
          }
-         else{
+         else
             System.out.println("Check the Order: too few nuts");
-         }
       }
       else{
-         if(washer < (bolt * 2)){
+         if(washer < (bolt * 2))
             System.out.println("Check the Order: too few washers");
-         }
-         else{
+         else
             System.out.println("Order is OK");
-         }
       }
    
       total = (bolt * boltPrice) + (nut * nutPrice) + (washer * washerPrice);
