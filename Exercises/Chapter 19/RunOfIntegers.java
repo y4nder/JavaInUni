@@ -11,9 +11,9 @@ public class RunOfIntegers{
       System.out.print("Enter End: ");    //Enter value for where the counter will end
       end = scan.nextInt();
       
-      while(start <= end){       //the condition checks if the counter has reached the end number
+      while(start <= end){             //the condition checks if the counter has reached the end number
          System.out.println(start);
-         start = start + 1; //this expression adds 1 to the start variable
+         start = start + 1;         //this expression adds 1 to the start variable
       }
    }
 }
