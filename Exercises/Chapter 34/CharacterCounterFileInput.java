@@ -24,7 +24,7 @@ public class CharacterCounterFileInput{
             case '.': case ',': case ':': case ';': case '?': case '!': case '-': case '(': case ')': case '[': case ']': case '\'':
                punctuation++; 
                break;
-            case '$': case '%': case '_': case ' ':
+            case '$': case '%': case '_': case ' ': case '#': case '^': case '*': case '`': case '+':
                specialChar++; 
                break;
             case '1': case '2':  case '3':  case '4':  case '5':  case '6':  case '7':  case '8':  case '9':  case '0':
@@ -35,12 +35,11 @@ public class CharacterCounterFileInput{
                break;
          }
       }
-      // display the number of vowel, consonants, punctuations, special character along with their percentages.
-      System.out.println("The string \"" + word + "\" contains: ");
-      System.out.println(vowel + " Vowels = " + percent.format((vowel + 0.0)/length) );
-      System.out.println(consonant + " Consonants = " + percent.format((consonant + 0.0)/length) );
-      System.out.println(punctuation + " Punctuations = " + percent.format((punctuation + 0.0)/length) );
-      System.out.println(specialChar + " Special Characters = " + percent.format((specialChar + 0.0)/length));
-      System.out.println(digit + " digits = " + percent.format((digit + 0.0)/length));
+      
+      System.out.printf("%-1d  %-15s %15s \n", vowel, "Vowels", (percent.format((vowel + 0.0)/length)) );
+      System.out.printf("%-1d  %-15s %15s \n", consonant, "Consonants", (percent.format((consonant + 0.0)/length)) );
+      System.out.printf("%-1d  %-15s %15s \n", punctuation, "Punctuations", (percent.format((punctuation + 0.0)/length)) );
+      System.out.printf("%-1d  %-15s %12s \n", specialChar, "Special Characters", (percent.format((specialChar + 0.0)/length)) );
+      System.out.printf("%-1d  %-15s %15s ", digit, "digits", (percent.format((digit + 0.0)/length)) );
    }
 }

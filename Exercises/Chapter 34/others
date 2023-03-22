@@ -1,0 +1,9 @@
+      // display the number of vowel, consonants, punctuations, special character along with their percentages.
+      /*
+      System.out.println("The string \"" + word + "\" contains: ");
+      System.out.println(vowel + " Vowels = " + percent.format((vowel + 0.0)/length) );
+      System.out.println(consonant + " Consonants  = " + percent.format((consonant + 0.0)/length) );
+      System.out.println(punctuation + " Punctuations = " + percent.format((punctuation + 0.0)/length) );
+      System.out.println(specialChar + " Special Characters = " + percent.format((specialChar + 0.0)/length));
+      System.out.println(digit + " digits = " + percent.format((digit + 0.0)/length));
+      */
