@@ -1,3 +1,4 @@
+//Exercise 4
 import java.util.Random;
 public class RandomNames{
    public static void main(String[] args){
