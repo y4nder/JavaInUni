@@ -3,36 +3,42 @@ import java.util.Scanner;
 import java.text.DecimalFormat;
 public class CharacterCounterFileInput{
    public static void main(String[] args){
-      String word;     
-      int length;     
+      String phrase, text;     
+      int length = 0;     
       int vowel = 0, consonant = 0, punctuation = 0, specialChar = 0, digit = 0; 
       char letter;
       Scanner scan = new Scanner(System.in);
       DecimalFormat percent = new DecimalFormat("0.00%");
       
       System.out.print("Enter String: ");
-      word = scan.nextLine();      
+      phrase = scan.nextLine().toUpperCase();
+         
+      Scanner scanner = new Scanner(phrase);
       
-      length = word.length();                    
+      while( scanner.hasNext() ){
       
-      for(int i = 0; i < length; i++){
-         letter = word.charAt(i);         
-         switch (letter){
-            case 'a': case 'e': case 'i': case 'o': case 'u':
-               vowel++; 
-               break;
-            case '.': case ',': case ':': case ';': case '?': case '!': case '-': case '(': case ')': case '[': case ']': case '\'':
-               punctuation++; 
-               break;
-            case '$': case '%': case '_': case ' ': case '#': case '^': case '*': case '`': case '+':
-               specialChar++; 
-               break;
-            case '1': case '2':  case '3':  case '4':  case '5':  case '6':  case '7':  case '8':  case '9':  case '0':
-               digit++;
-               break;  
-            default:
-               consonant++; 
-               break;
+         text = scanner.next();
+         length = text.length();  
+          
+         for(int i = 0; i < length; i++){
+            letter = text.charAt(i);         
+            switch (letter){
+               case 'A': case 'E': case 'I': case 'O': case 'U':
+                  vowel++; 
+                  break;
+               case '.': case ',': case ':': case ';': case '?': case '!': case '-': case '(': case ')': case '[': case ']': case '\'':
+                  punctuation++; 
+                  break;
+               case '$': case '%': case '_': case ' ': case '#': case '^': case '*': case '`': case '+':
+                  specialChar++; 
+                  break;
+               case '1': case '2':  case '3':  case '4':  case '5':  case '6':  case '7':  case '8':  case '9':  case '0':
+                  digit++;
+                  break;  
+               default:
+                  consonant++; 
+                  break;
+            }
          }
       }
       

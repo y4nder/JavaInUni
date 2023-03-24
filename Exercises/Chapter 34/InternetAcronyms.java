@@ -1,3 +1,4 @@
+//exercise 3
 import java.util.Scanner;
 public class InternetAcronyms{
    public static void main (String[] args ){
@@ -21,7 +22,7 @@ public class InternetAcronyms{
                case "LOL":
                  message = message + "Laugh Out Loud " ;
                  break;
-                        
+                                        
                case "BFF":
                  message = message + "Best Friends Forever " ;
                  break;

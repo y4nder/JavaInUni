@@ -1,10 +1,16 @@
 //Exercise 1
+import java.util.Scanner;
 public class CharacterCounter{
    public static void main(String[] args){
-      String word = "fjaijeoi*(EUFUEFEOIFLEuf)e(suf2190";     // initialize string with a string literal;
-      int length = word.length();         // get the length of the string
+      String word;     
+      int length;      
       int vowel = 0, consonant = 0, punctuation = 0, specialChar = 0, digit = 0; ; //initialize the values of vowel, consonant, punctuation, special characters, and digits.
       char letter;                        // declare a variable to store single characters
+      Scanner scan = new Scanner(System.in);
+      
+      System.out.println("Enter word: ");
+      word = scan.nextLine();
+      length = word.length();         // get the length of the string
       
       // program will loop according to the string's length
       for(int i = 0; i < length; i++){
@@ -16,7 +22,7 @@ public class CharacterCounter{
             case '.': case ',': case ':': case ';': case '?': case '!': case '-': case '(': case ')': case '[': case ']': case '\'':
                punctuation++; 
                break;
-            case '$': case '%': case '_': case ' ':
+            case '$': case '%': case '_':
                specialChar++; 
                break;
             case '1': case '2':  case '3':  case '4':  case '5':  case '6':  case '7':  case '8':  case '9':  case '0':
