@@ -1,7 +1,7 @@
 //Exercise 1
 public class CharacterCounter{
    public static void main(String[] args){
-      String word = "Hello World!!? How are you??12";     // initialize string with a string literal;
+      String word = "fjaijeoi*(EUFUEFEOIFLEuf)e(suf2190";     // initialize string with a string literal;
       int length = word.length();         // get the length of the string
       int vowel = 0, consonant = 0, punctuation = 0, specialChar = 0, digit = 0; ; //initialize the values of vowel, consonant, punctuation, special characters, and digits.
       char letter;                        // declare a variable to store single characters
