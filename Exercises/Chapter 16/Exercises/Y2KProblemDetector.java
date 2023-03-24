@@ -1,4 +1,4 @@
-//exercise 5
+//exercise 5.1
 import java.util.Scanner;
 public class Y2KProblemDetector{
    public static void main(String[] args){

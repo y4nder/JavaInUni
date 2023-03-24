@@ -1,3 +1,4 @@
+//exercise 3
 import java.util.Scanner;
 public class Microwave{
    public static void main(String[] args){

@@ -1,3 +1,4 @@
+//exercise 5
 import java.util.Scanner;
 public class TownDump{
    public static void main(String[] args){

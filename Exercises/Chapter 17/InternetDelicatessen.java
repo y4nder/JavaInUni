@@ -1,3 +1,4 @@
+//exercise 1
 import java.text.*;
 import java.util.Scanner;
 public class InternetDelicatessen{

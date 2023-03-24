@@ -21,21 +21,6 @@ public class FantasyGame{
       
       totalPoints = strength + health + luck;
       
-      if(strength > 10)
-         strength = 10;
-      if(strength < 0)
-         strength = 0;
-      
-      if(health > 10)
-         health = 10;
-      if(health < 0)
-         health = 0;
-      
-      if(luck > 10)
-         luck = 10;   
-      if(health < 0)
-         luck = 0;            //line 24 to line 37, these series of single branch if statements prevents the user from entering outside the range
-                              //if the input is over 10 it will default to 10, if the input is under 0 then it will default to 0, single branch was used to follow the theme of the chapter. 
       if(totalPoints > 15){
          strength= 5;
          health = 5;

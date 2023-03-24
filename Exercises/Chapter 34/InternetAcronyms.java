@@ -2,23 +2,28 @@
 import java.util.Scanner;
 public class InternetAcronyms{
    public static void main (String[] args ){
-      String phrase, text; 
-      String message = "Interpretation: ";
+      String phrase = "", text; 
+      String message = "New Message ==> ";
       int exit = 0;
-      Scanner scan = new Scanner( System.in );
+      Scanner scan = new Scanner(System.in);
       
       System.out.println("Enter a message that has Internet Acronyms. (type \"quit\" to exit)");
-      System.out.print("Enter your message: ");
-      phrase = scan.nextLine().trim().toUpperCase();
+ 
+      while(exit == 0){
       
-      if(phrase.equals("QUIT"))
-         exit = 1;
-               
-      Scanner scanner = new Scanner(phrase);                   
-      
-      while( exit == 0 ){
-         while( scanner.hasNext() ){                              
-            switch ( text = scanner.next() ){                     
+         System.out.print("\nEnter your message: ");
+         phrase = scan.nextLine().trim().toUpperCase();
+         
+         if(phrase.equals("QUIT")){
+            exit = 1;
+            System.out.println("Goodbye."); 
+         }       
+         
+         Scanner scanner = new Scanner(phrase);      
+         
+         while(scanner.hasNext()){
+                                       
+            switch (text = scanner.next()){                     
                case "LOL":
                  message = message + "Laugh Out Loud " ;
                  break;
@@ -89,18 +94,11 @@ public class InternetAcronyms{
             }
          }
          
-      System.out.println (message);
-      message = "Interpretation: ";
+         if (exit == 0){
+            System.out.println (message);
+            message = "New Message ==> ";  
+         }
       
-      System.out.print("\nEnter your message: ");
-      phrase = scan.nextLine().trim().toUpperCase();
-      scanner = new Scanner(phrase); 
-      
-      if(phrase.toUpperCase().equals("QUIT"))
-         exit = 1;
       }
-      
-      if (exit == 1)
-         System.out.println("Goodbye."); 
    }
 }

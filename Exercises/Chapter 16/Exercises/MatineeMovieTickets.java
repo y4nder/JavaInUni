@@ -1,3 +1,4 @@
+//exercise 8
 import java.util.*;
 import java.text.*;
 public class MatineeMovieTickets{
@@ -14,7 +15,7 @@ public class MatineeMovieTickets{
       time = scan.nextInt();
       
       if(age < 13){
-         if(time <= 1300){
+         if(time < 1700){
             price = childPriceMatinee;
          }
          else{
@@ -22,7 +23,7 @@ public class MatineeMovieTickets{
          }
       }
       else{
-         if(time <= 1300){
+         if(time < 1700){
             price = adultPriceMatinee;
          }
          else{

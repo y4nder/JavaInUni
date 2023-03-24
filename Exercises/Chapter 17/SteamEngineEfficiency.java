@@ -1,3 +1,4 @@
+//exercise 2
 import java.util.Scanner;
 public class SteamEngineEfficiency{
    public static void main(String[] args){
