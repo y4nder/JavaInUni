@@ -2,19 +2,33 @@
 import java.util.Scanner;
 public class InputFilePrompt{
    public static void main(String[] args){
-      String fileName, ext = "*.dat";
+      String fileName = "dat", ext = "dat";
       Scanner scan = new Scanner(System.in);
       
-      System.out.println("input file: ");
-      fileName = scan.nextLine();
+      //System.out.println("input file: ");
+      //fileName = scan.nextLine();
       
       Scanner sc = new Scanner(fileName);
+
+      int index = fileName.lastIndexOf('.');
+      System.out.println(index);
+
+            
+      if(index >= 1){
       
-      if(sc.hasNext(ext)){
-         System.out.println("extension name found");
+         String extension = fileName.substring(index + 1);
+         fileName = fileName.substring(0, index );
+         
+         if (extension.equals(ext)){
+            
+         }
+         else{
+            System.out.println("file name must end with .dat");
+         }
       }
-      else
-         System.out.println("no extension name");
+      else{
+         System.out.println("File name missing,");
+      }
       
       
    }

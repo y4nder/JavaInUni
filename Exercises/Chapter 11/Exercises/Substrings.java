@@ -3,7 +3,7 @@ public class Substrings {
    public static void main ( String [] args) {
       String str = new String("Golf is a good walk spoiled.");
       int len = str.length();
-      String sub = str.substring(len, 0);
+      String sub = str.substring(0, 0);
       
       System.out.println("length: " + len);     //reference for length.
       System.out.println(str);
