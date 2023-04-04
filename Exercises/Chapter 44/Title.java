@@ -8,7 +8,7 @@ public class Title{
          System.out.println("Enter a name: ");
          name = scan.nextLine();
          
-         if(name.toLower().startsWith("Amy") ||
+         if(name.toLowerCase().startsWith( "AMY".toLowerCase() ) ||
             name.startsWith("Buffy") ||
             name.startsWith("Cathy") )
             {
