@@ -1,4 +1,4 @@
-//change the file directory. 
+//Z:/MM122/LubgubanL/jgrasp/Exercises/Chapter 44
 import java.io.*;
 import java.util.Scanner;
 public class DocumentationPrinter{
@@ -11,8 +11,7 @@ public class DocumentationPrinter{
          line = scan.nextLine();
          
          if(line.contains("//") ){
-            int index = line.indexOf('/');
-            System.out.println(line.substring(index));        
+            System.out.println( line.substring( line.indexOf("//") ) );        
          }
       }
    }
