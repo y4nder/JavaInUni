@@ -23,23 +23,20 @@ public class MicrowaveMenu{
             System.out.println(">> That is not a number, try again...");
       }
       while(numeric == false);   // loop executes if the user input is not a number.
-
-         
-      int digits = time.length();   // gets the length of the input
       
       System.out.print("Your time=> ");
       
-      if(digits == 1){
+      if(time.length() == 1){
          System.out.println("0:0" + time); 
       }
-      if(digits == 2){
+      if(time.length() == 2){
          System.out.println("0:" + time);
       }
-      if(digits == 3){
+      if(time.length() == 3){
          System.out.println("0" + time.charAt(0) + ":" + time.substring(1) );
       }
-      if(digits >= 4){
-         System.out.println( time.substring(0, digits - 2) + ":" +time.charAt(digits - 2) + "" + time.charAt(digits-1));
+      if(time.length() >= 4){
+         System.out.println( time.substring(0, time.length() - 2) + ":" +time.charAt(time.length() - 2) + "" + time.charAt(time.length()-1));
       }
    }
 }
