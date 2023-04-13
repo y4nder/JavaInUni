@@ -1,3 +1,4 @@
+//Exercise 4
 // This program converts digits into a timer
 import java.util.Scanner;
 public class MicrowaveMenu{

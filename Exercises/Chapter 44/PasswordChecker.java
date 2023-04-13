@@ -1,3 +1,4 @@
+//Exercise 6
 import  java.util.Scanner;
 public class PasswordChecker{
    public static void main(String[] args){

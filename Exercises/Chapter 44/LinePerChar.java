@@ -1,3 +1,4 @@
+//Exercise 2
 import java.util.Scanner;
 public class LinePerChar{
    public static void main(String[] args){
@@ -6,10 +7,8 @@ public class LinePerChar{
       
       System.out.println("Enter a string: ");
       word = scan.nextLine();
-      
-      int length = word.length();
-      
-      for(int i = 0; i < length; i++){
+       
+      for(int i = 0; i < word.length(); i++){
          System.out.println(word.charAt(i));
       }
    }

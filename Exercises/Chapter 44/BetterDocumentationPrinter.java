@@ -1,3 +1,4 @@
+//Exercise 5.2
 //locations
    //Z:/MM122/LubgubanL/jgrasp/Exercises/Chapter 10/AverageRainfall.java
    //C:/Users/user/Documents/!school/2nd SEMESTER/COMPROG 2/Exercises/LubgubanL/Exercises/Chapter 10/AverageRainfall.java
