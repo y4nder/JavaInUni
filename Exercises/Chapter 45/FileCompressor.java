@@ -16,7 +16,7 @@ public class FileCompressor{
                   line = line.substring( line.toUpperCase().indexOf("A") + 2).trim();
                }
 
-               if( line.trim().toUpperCase().startsWith("THE") ){
+               if( line.trim().toUpperCase().startsWith("THE ") ){
                   line = line.substring( line.toUpperCase().indexOf("THE") + 3).trim();
                }
              
