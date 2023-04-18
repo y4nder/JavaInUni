@@ -21,13 +21,13 @@ public class IncomeTaxTableFunctions{
          displayData(monthlyGrossPay, annualGrossPay, incomeTax, annualNetPay);
 
       }
-      while( getOption().equals("y") );           
+      while( getOption().toUpperCase().equals("Y") );           
    }
    
    //Methods
    public static int getHoursWorked(){
       Scanner scan = new Scanner(System.in);
-      System.out.print("Enter number of hours worked    : ");
+      System.out.print("\nEnter number of hours worked    : ");
       return scan.nextInt();
    }
    
@@ -80,9 +80,16 @@ public class IncomeTaxTableFunctions{
    }
    
    public static String getOption(){
+      String option;
       Scanner scan = new Scanner(System.in);
-      System.out.print("Do you want to continue? (y/n) : ");
-      return scan.nextLine();
+      
+      do{
+         System.out.print("Do you want to continue? (y/n) : ");
+         option = scan.nextLine();
+      }
+      while( !option.toUpperCase().equals("Y") && !option.toUpperCase().equals("N") );
+      
+      return option;
    }
 }
 
