@@ -1,16 +1,18 @@
 import java.text.DecimalFormat;
 import java.util.Scanner;
-public class IncomeTaxTable{
+public class IncomeTaxTableFunctions{
    public static void main(String[] args){
       int hoursWorked, ratePerHour;
       long incomeTax, annualNetPay, monthlyGrossPay, annualGrossPay;
-      Scanner scan = new Scanner(System.in);
+      //Scanner scan = new Scanner(System.in);
       DecimalFormat form = new DecimalFormat();
       
-      System.out.print("Enter number of hours worked    : ");
-      hoursWorked = scan.nextInt();
-      System.out.print("Enter rate per hour             : ");
-      ratePerHour = scan.nextInt();
+      //input data
+      hoursWorked = getHoursWorked();
+      ratePerHour = getRatePerHour();
+
+      //process data
+      monthlyGrossPay = 
       
       monthlyGrossPay = hoursWorked * ratePerHour;
       annualGrossPay = monthlyGrossPay * 12;
@@ -41,4 +43,38 @@ public class IncomeTaxTable{
       System.out.println("Income Tax Pay                  : " + form.format(incomeTax));
       System.out.println("Annual Net Pay                  : " + form.format(annualNetPay));
    }
+   
+   public static int getHoursWorked(){
+      int hourWorked;
+      Scanner scan = new Scanner(System.in);
+      System.out.print("Enter number of hours worked    : ");
+      hoursWorked = scan.nextInt();
+      
+      return hoursWorked;
+   }
+   public static int getRatePerHour(){
+      int ratePerHour;
+      Scanner scan = new Scanner(System.in);
+      System.out.print("Enter rate per hour             : ");
+      ratePerHour = scan.nextInt();
+      
+      return ratePerHour;
+   }
+   
+   public static long computeMonthlyGrossPay()
+   
 }
+
+
+/*
+
+input data:
+getHoursWorked();
+getRatePerHour();
+
+process data:
+computeMonthlyGrossPay();
+computeAnnualGrossPay();
+
+
+*/
