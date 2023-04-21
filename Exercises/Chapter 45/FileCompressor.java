@@ -1,9 +1,11 @@
+//Exercise 4
+//Z:/MM122/LubgubanL/jgrasp/Exercises/Chapter 45/verbose.text
 import java.io.*;
 import java.util.Scanner;
 public class FileCompressor{
    public static void main(String[] args) throws FileNotFoundException{
       String line;
-      File file = new File("C:/Users/user/Documents/!school/2nd SEMESTER/COMPROG 2/Exercises/LubgubanL/Exercises/Chapter 45/Harry potter.txt");
+      File file = new File("C:/Users/user/Documents/!school/2nd SEMESTER/COMPROG 2/Exercises/LubgubanL/Exercises/Chapter 45/verbose.txt");
       Scanner scan = new Scanner(file);
       
       while( scan.hasNextLine() ){

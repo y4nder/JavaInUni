@@ -1,7 +1,11 @@
+//Exercise 1
+//Z:/MM122/LubgubanL/jgrasp/Exercises/Chapter 45/badPascal.java
+import java.io.*;
 import java.util.Scanner;
 public class JavaTranslator{
-   public static void main(String[] args){
-      Scanner scan = new Scanner(System.in);
+   public static void main(String[] args) throws FileNotFoundException{
+      File file = new File("C:/Users/user/Documents/!school/2nd SEMESTER/COMPROG 2/Exercises/LubgubanL/Exercises/Chapter 45/badPascal.pas");
+      Scanner scan = new Scanner(file);
       String line, str;
       
       while( scan.hasNextLine() ){
@@ -18,6 +22,5 @@ public class JavaTranslator{
             System.out.println(line);
          }
       }
-      
    }
 }
