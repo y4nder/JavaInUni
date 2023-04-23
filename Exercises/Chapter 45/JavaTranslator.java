@@ -6,7 +6,7 @@ public class JavaTranslator{
    public static void main(String[] args) throws FileNotFoundException{
       File file = new File("C:/Users/user/Documents/!school/2nd SEMESTER/COMPROG 2/Exercises/LubgubanL/Exercises/Chapter 45/badPascal.pas");
       Scanner scan = new Scanner(file);
-      String line, str;
+      String line;
       
       while( scan.hasNextLine() ){
          line = scan.nextLine();
