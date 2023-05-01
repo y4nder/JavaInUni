@@ -1,12 +1,10 @@
 import java.util.Scanner;
 class HelloObject{
    private String greeting;
-   Scanner scan = new Scanner(System.in);
-
-   public HelloObject()
+   
+   public HelloObject(String message)
    {
-      System.out.print("Enter Greeting: ");
-      greeting = scan.nextLine();
+      greeting = message;
    }
 
    public void speak(){
@@ -16,7 +14,9 @@ class HelloObject{
 
 public class HelloExercise3{
    public static void main ( String[] args ){
-      HelloObject anObject = new HelloObject(); 
+      Scanner scan = new Scanner(System.in);
+      System.out.print("Enter Greeting: ");
+      HelloObject anObject = new HelloObject( scan.nextLine() ); 
       anObject.speak();
    }
 }

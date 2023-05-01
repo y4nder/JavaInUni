@@ -1,22 +1,26 @@
 class HelloObject{
-   private String greeting;
+   private String greeting1;
+   private String greeting2;
 
-   public HelloObject( String st )
-   {
-      greeting = st;
+   public HelloObject( String st1, String st2 ){
+      greeting1 = st1;
+      greeting2 = st2;
    }
 
-   public void speak(){
-      System.out.println( greeting );
+   public void speak1(){
+      System.out.println( greeting1 );
+   }
+
+   public void speak2(){
+      System.out.println( greeting2 );
    }
 }
 
 public class HelloExercise2{
    public static void main ( String[] args ){
-      HelloObject anObject1 = new HelloObject("Good morning World!");
-      HelloObject anObject2 = new HelloObject("Good evening World!"); 
+      HelloObject anObject = new HelloObject("Good morning World!", "Good evening World!");
       
-      anObject1.speak();
-      anObject2.speak(); 
+      anObject.speak1();
+      anObject.speak2(); 
    }
 }

@@ -16,10 +16,11 @@ class HelloObject{
 
 public class HelloExercise4{
    public static void main ( String[] args ){
-      HelloObject anObject1 = new HelloObject("Hello");
+      HelloObject anObject1 = new HelloObject("Hello World!");
       anObject1.speak();
       
       HelloObject anObject2 = new HelloObject(anObject1);
-      anObject2.speak();      
+      anObject2.speak(); 
+      
    }
 }
