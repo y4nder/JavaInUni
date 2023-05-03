@@ -12,11 +12,9 @@ public class FactorialErrorFlag {
     {
         int n = 21;
         System.out.println( "factorial of " + n);
-        if(factorial(n) == -1){
+        if(factorial(n) == -1)
             System.out.println("Error Messsage");
-        }
-        else{
+        else
             System.out.println( "first method : " + factorial( n ) ); 
-        }
     }
 }
