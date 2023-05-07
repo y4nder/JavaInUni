@@ -1,4 +1,27 @@
-public class WeightTester{
+public class WeightSubrange {
+    private int[] data;
+
+    public WeightSubrange(int[] init){
+        data = new int[init.length];
+        for (int j = 0; j < data.length; j++){
+            data[j] = init[j];
+        }
+    }
+    public String toString(){
+        String str = "";
+        for (int j = 0; j < data.length; j++){
+            str += data[j] + " ";
+        }
+        return str;
+    }
+    public int average(){
+        int sum = 0;
+        for (int j = 0; j < data.length; j++){
+            sum += data[j];
+        }
+
+        return sum / data.length;
+    }
     public static void main ( String[] args ){
         int[] values = { 98,  99,  98,  99, 100, 101, 102, 100, 104, 105,
                         105, 106, 105, 103, 104, 103, 105, 106, 107, 106,
@@ -19,4 +42,4 @@ public class WeightTester{
         System.out.println("average of second half= " + sndHalfAvg );
         System.out.println("difference between the two averages is: " + (fstHalfAvg - sndHalfAvg) );
     }
-}    
+}
