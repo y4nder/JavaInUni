@@ -26,7 +26,7 @@ public class MaxOfEight{
     
     public static void main(String[] args){
         int a=  1, b= 34, c=  4, d= 30;
-        int e= 45, f= 7, g= 21, h=  7;
+        int e= 45, f= 75, g= 21, h=  700;
 
         System.out.println("The max of " 
           + a + ", " + b + ", " + c + ", " + d + ", "
