@@ -18,6 +18,6 @@ public class SameSum {
 
         System.out.println( "sum:  " 
             + (valA[0]+valB[0]) + " " + (valA[1]+valB[1]) + " " 
-            + (valA[2]+valB[2]) + " " + (valA[3]+valB[3]) );
+            + (valA[2]+valB[2]) + " " + (valA[3]+valB[3]) );        
     }
 }
