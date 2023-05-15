@@ -4,7 +4,7 @@ public class ColumnSums {
                         {1, 4, 4, 8, 13},
                         {9, 1, 0, 2},
                         {0, 2, 6, 3, -1, -8}, 
-                        {1, 4, 4}};
+                        {1, 4, 4, 3,  4, -1, 15}};
         int[] sums;
         
         //determine the length of sums array
