@@ -1,6 +1,6 @@
 public class Smooth{
    public static void main ( String[] args ){
-      int[][] image  = {{0,0,0,0,0,0,0,0,0,0,0,0},
+      int[][] image  = { {0,0,0,0,0,0,0,0,0,0,0,0},
                          {0,0,0,0,0,0,0,0,0,0,0,0},
                          {0,0,5,5,5,5,5,5,5,5,0,0},
                          {0,0,5,5,5,5,5,5,5,5,0,0},
@@ -17,14 +17,14 @@ public class Smooth{
       int[][] smooth = new int[ image.length ][ image[0].length ];
       int sum = 0;
       // Compute the smoothed value for 
-    s  // non-edge locations in the image.
+      // non-edge locations in the image.
 
-    for ( int row=1; row<image.length-1; row++ ){
-      for ( int col=1; col<image[row].length-1; col++ ){
-        sum = image[row-1][col-1] + image[row-1][col] + image[row-1][col + 1] 
+    for ( int row = 1; row < image.length - 1; row++ ){
+      for ( int col = 1; col < image[row].length - 1; col++ ){
+        sum = image[row - 1][col - 1] + image[row - 1][col] + image[row - 1][col + 1] 
                + image[row][col - 1] + image[row][col] + image[row][col + 1] 
                + image[row + 1][col - 1] + image[row + 1][col] + image[row + 1][col + 1];
-        smooth[row][col] = sum/9;
+        smooth[row][col] = sum / 9;
       }
    }
       
