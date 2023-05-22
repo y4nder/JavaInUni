@@ -24,14 +24,22 @@ public class UnluckyEvilNumbers{
 
     public static void main(String[] args){
         Scanner scan = new Scanner(System.in);
-        int num;
+        int num, ctr = 0;
+        boolean x = false;
 
         System.out.print("Enter a number: ");
         num = scan.nextInt();
-
         for(int i = 0 ; i < num; i++){
-            if( checkLuck(i) == true && checkBits(i) == false)
+            if( checkLuck(i) == true && checkBits(i) == false){
                 System.out.println( i + " is Unlucky Evil");
+                x = true;
+                ctr++;
+            }
+
         }
+        if(x == false) 
+            System.out.println("There are no Unlucky Evil numbers from 1 to " + num);
+        else
+            System.out.println("There are " + ctr + " Unlucky Evil Numbers from 1 to " + num);
     }
 }
